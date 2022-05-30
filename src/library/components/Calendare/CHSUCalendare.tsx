@@ -1,15 +1,23 @@
 import React from 'react';
-import { ICHSUCalendareLocalisation } from './loc';
+import { ICHSUCalendareLocalisation, SatrtDay } from './loc';
 import { DefaultLocalisation } from './loc/DefaultLocalisation';
+//import styles from './Styles.module';
 
 
 export interface ICHSUCalendare{
     Localisation?:ICHSUCalendareLocalisation;
+    StartDay?:SatrtDay;
 }
 
 export default class CHSUCalendare extends React.Component<ICHSUCalendare>{
 
+    public render():React.ReactElement<ICHSUCalendare>{
+        return (
+            <div>
 
+            </div>
+        );
+    }
 
 
 
