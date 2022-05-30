@@ -1,5 +1,12 @@
 export interface ICHSUCalendareLocalisation{
+    /**
+     * Локализация дней недели
+     */
     LocalWeek:ILocWeek;
+    /**
+     * Локализация месяцев
+     */
+    LocalYear:ILocYear;
 }
 
 
@@ -36,7 +43,27 @@ export interface ILocWeek{
     };
 }
 
-export interface ILocMonth{
-
+export interface ILocYear{
+    [JSMonthOrder:number]:{
+        /**
+         * Локализированный порядковый номер месяца
+         */
+        LocMonthOrder:number;
+        /**
+         * Короткое наименование
+         */
+        ShortName:string;
+        /**
+         * Длинное наименование
+         */
+        LongName:string;
+        /**
+         * Прочие имена при необходимости
+         */
+        OtherNames?:{[name: string]:string};
+          
+    }
 }
 
+
+export type SatrtDay="FirstDayMonth"|"FirstDayWeek"|"CurentDate";
