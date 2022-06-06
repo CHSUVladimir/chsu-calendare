@@ -67,7 +67,8 @@
     "sass": "^1.52.1",
     "sass-autoprefixer": "^1.0.1",
     "sass-loader": "^13.0.0",
-    "style-loader": "^3.3.1"
+    "style-loader": "^3.3.1",
+    "typescript-plugin-css-modules": "^3.4.0"
   },
   "main": "src/chsu-calendare/cjs/index.js",
   "module": "src/chsu-calendare/esm/index.js",

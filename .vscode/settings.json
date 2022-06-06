@@ -1,0 +1,5 @@
+{
+    "scss.format.braceStyle": "expand",
+    "editor.formatOnSave": true,
+    "typescript.format.insertSpaceAfterTypeAssertion": true
+}

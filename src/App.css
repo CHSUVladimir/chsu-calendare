@@ -32,7 +32,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.blocCal {
+  display: inline-block;
+}
+
+.blocCal h2 {
+  word-wrap: break-word;
+}
+
+.testClass {
+  border-radius: 50%;
+  background-color: yellow;
+  padding: 0.15em;
 }

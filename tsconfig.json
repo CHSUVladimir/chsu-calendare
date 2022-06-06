@@ -22,9 +22,16 @@
     "sourceMap": true,
     "outDir": "chsu-calendare",
     "moduleResolution": "node",
-    "emitDeclarationOnly": true
+    "emitDeclarationOnly": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   },
   "include": [
-    "src/library"
+    "src/library",
+    "src/**/*.ts",
+    "declarations.d.ts"
   ]
 }

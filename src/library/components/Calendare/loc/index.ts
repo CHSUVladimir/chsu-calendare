@@ -1,20 +1,22 @@
-export interface ICHSUCalendareLocalisation{
+export interface ICHSUCalendareLocalisation {
     /**
      * Локализация дней недели
      */
-    LocalWeek:ILocWeek;
+    LocalWeek: ILocWeek;
     /**
      * Локализация месяцев
      */
-    LocalYear:ILocYear;
+    LocalYear: ILocYear;
+
+    Warning: IWarning;
 }
 
 
-export interface ILocWeek{
+export interface ILocWeek {
     /**
      * День недели с которого начинается неделя
      */
-    FirstLocDay:number;
+    FirstLocDay: number;
     /**
      * Локализованная неделя
      */
@@ -22,48 +24,52 @@ export interface ILocWeek{
         /**
          * Порядковый день недели принятый в js
          */
-        [JSDOF:number]:{
-        /**
-         * Локальный номер дня недели
-         */
-        LocDof:number;
-        /**
-        * Короткое наименование
-        */
-        ShortName:string;
-       /**
-        * Длинное наименование
-        */
-        LongName:string;
-        /**
-        * Прочие имена при необходимости
-        */
-      OtherNames?:{[name: string]:string};
+        [JSDOF: number]: {
+            /**
+             * Локальный номер дня недели
+             */
+            LocDof: number;
+            /**
+            * Короткое наименование
+            */
+            ShortName: string;
+            /**
+             * Длинное наименование
+             */
+            LongName: string;
+            /**
+            * Прочие имена при необходимости
+            */
+            OtherNames?: { [name: string]: string };
         }
     };
 }
 
-export interface ILocYear{
-    [JSMonthOrder:number]:{
+export interface ILocYear {
+    [JSMonthOrder: number]: {
         /**
          * Локализированный порядковый номер месяца
          */
-        LocMonthOrder:number;
+        LocMonthOrder: number;
         /**
          * Короткое наименование
          */
-        ShortName:string;
+        ShortName: string;
         /**
          * Длинное наименование
          */
-        LongName:string;
+        LongName: string;
         /**
          * Прочие имена при необходимости
          */
-        OtherNames?:{[name: string]:string};
-          
+        OtherNames?: { [name: string]: string };
+
     }
 }
 
 
-export type SatrtDay="FirstDayMonth"|"FirstDayWeek"|"CurentDate";
+export type SatrtDay = "FirstDayMonth" | "FirstDayWeek" | "CurentDate";
+
+export interface IWarning {
+    NoLessMonth: string;
+}
