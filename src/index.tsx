@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { CHSUCalendare } from './library';
+
+export { CHSUCalendare } from './library';
 
 const root = ReactDOM.createRoot(
   document.getElementById('CalendareCHSU') as HTMLElement

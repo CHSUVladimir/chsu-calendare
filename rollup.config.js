@@ -28,14 +28,14 @@ export default [
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
       scss({
-        output: 'src/chsu-calendare/listree.min.css',
+        output: 'chsu-calendare/styles.min.css',
         outputStyle: "compressed"
       })
     ],
   },
   {
-    input: "src/chsu-calendare/esm/types/index.d.ts",
-    output: [{ file: "src/chsu-calendare/index.d.ts", format: "esm" }],
+    input: "src/library/index.ts",
+    output: [{ file: "chsu-calendare/index.d.ts", format: "esm" }],
     plugins: [dts()],
     external: [/\.css$/]
   },

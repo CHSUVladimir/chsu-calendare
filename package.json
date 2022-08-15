@@ -1,6 +1,6 @@
 {
   "name": "@CHSUVladimir/chsu-calendare",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -97,10 +97,10 @@
     "typescript-plugin-css-modules": "^3.4.0",
     "webpack-cli": "^4.10.0"
   },
-  "main": "src/chsu-calendare/cjs/index.js",
-  "module": "src/chsu-calendare/esm/index.js",
+  "main": "chsu-calendare/cjs/index.js",
+  "module": "chsu-calendare/esm/index.js",
   "files": [
-    "src/chsu-calendare"
+    "chsu-calendare"
   ],
   "repository": {
     "type": "git",
@@ -109,5 +109,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/CHSUVladimir"
   },
-  "types": "src/chsu-calendare/index.d.ts"
+  "types": "chsu-calendare/index.d.ts"
 }

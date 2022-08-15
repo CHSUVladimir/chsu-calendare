@@ -7,6 +7,7 @@ export interface ICHSUCalendareLocalisation {
      * Локализация месяцев
      */
     LocalYear: ILocYear;
+    Warning: IWarning;
 }
 export interface ILocWeek {
     /**
@@ -65,3 +66,6 @@ export interface ILocYear {
     };
 }
 export declare type SatrtDay = "FirstDayMonth" | "FirstDayWeek" | "CurentDate";
+export interface IWarning {
+    NoLessMonth: string;
+}

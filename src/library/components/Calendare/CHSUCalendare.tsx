@@ -23,6 +23,10 @@ interface ICalendareState {
 
 export default class CHSUCalendare extends React.Component<ICHSUCalendare, ICalendareState>{
 
+    constructor(p: ICHSUCalendare) {
+        super(p);
+    }
+
     public state: Readonly<ICalendareState> = {
         CurentDate: new Date()
     };
