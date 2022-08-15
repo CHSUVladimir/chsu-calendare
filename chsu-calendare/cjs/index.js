@@ -4159,10 +4159,6 @@ var Button = function (props) {
     return jsxRuntime.exports.jsx("button", { children: props.label });
 };
 
-var styles_module = /*#__PURE__*/Object.freeze({
-	__proto__: null
-});
-
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
 
@@ -4676,6 +4672,5 @@ exports.AddValueToDate = AddValueToDate;
 exports.AddValuesToDate = AddValuesToDate;
 exports.Button = Button;
 exports.CHSUCalendare = CHSUCalendare;
-exports.CaledareStyle = styles_module;
 exports.getValuesFromDate = getValuesFromDate;
 //# sourceMappingURL=index.js.map

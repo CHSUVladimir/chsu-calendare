@@ -4155,10 +4155,6 @@ var Button = function (props) {
     return jsxRuntime.exports.jsx("button", { children: props.label });
 };
 
-var styles_module = /*#__PURE__*/Object.freeze({
-	__proto__: null
-});
-
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
 
@@ -4668,5 +4664,5 @@ var CHSUCalendare = /** @class */ (function (_super) {
     return CHSUCalendare;
 }(React.Component));
 
-export { AddValueToDate, AddValuesToDate, Button, CHSUCalendare, styles_module as CaledareStyle, getValuesFromDate };
+export { AddValueToDate, AddValuesToDate, Button, CHSUCalendare, getValuesFromDate };
 //# sourceMappingURL=index.js.map
