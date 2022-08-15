@@ -1,4 +1,4 @@
-import CaledareStyle from './styles.module.scss'
+import * as CaledareStyle from './styles.module.scss'
 
 export { default } from './CHSUCalendare';
 export { CaledareStyle }

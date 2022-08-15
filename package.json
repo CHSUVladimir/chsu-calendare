@@ -1,6 +1,6 @@
 {
-  "name": "chsu-calendare",
-  "version": "0.1.1",
+  "name": "@CHSUVladimir/chsu-calendare",
+  "version": "0.1.4",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -21,12 +21,25 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "prod": "webpack --mode production",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -49,8 +62,20 @@
     "@rollup/plugin-commonjs": "^22.0.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/node-logger": "^6.5.10",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/preset-scss": "^1.0.3",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
     "@types/jest": "^27.5.1",
     "babel-jest": "^28.1.0",
+    "css-loader": "^6.7.1",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "identity-obj-proxy": "^3.0.0",
@@ -59,16 +84,18 @@
     "postcss": "^8.4.14",
     "postcss-loader": "^7.0.0",
     "react-scripts": "^5.0.1",
-    "rollup": "^2.75.0",
+    "rollup": "^2.78.0",
     "rollup-plugin-dts": "^4.2.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
     "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.52.1",
+    "sass": "^1.54.4",
     "sass-autoprefixer": "^1.0.1",
-    "sass-loader": "^13.0.0",
+    "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
-    "typescript-plugin-css-modules": "^3.4.0"
+    "typescript-plugin-css-modules": "^3.4.0",
+    "webpack-cli": "^4.10.0"
   },
   "main": "src/chsu-calendare/cjs/index.js",
   "module": "src/chsu-calendare/esm/index.js",
@@ -78,6 +105,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/CHSUVladimir/chsu-calendare.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/CHSUVladimir"
   },
   "types": "src/chsu-calendare/index.d.ts"
 }

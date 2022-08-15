@@ -1,7 +1,8 @@
 import React from 'react';
 import { getValuesFromDate, IDatesView } from '../../CalendareEventsView';
 import { ILocYear } from '../loc';
-import styles from '../styles.module.scss'
+import * as CaledareStyle from '../styles.module.scss'
+
 
 export interface IDayCell {
     CurentDate?: Date;
@@ -55,12 +56,12 @@ export default class DayCell extends React.Component<IDayCell>{
      */
     private get ClassNames(): string {
         if (!this.props.CurentDate) {
-            return styles.nil;
+            return CaledareStyle.nil;
         } else {
             const td = new Date();
             const cd = this.props.CurentDate;
             if (td.getFullYear() === cd.getFullYear() && td.getMonth() === cd.getMonth() && td.getDate() === cd.getDate()) {
-                return styles.today;
+                return CaledareStyle.today;
             }
         }
         return "";

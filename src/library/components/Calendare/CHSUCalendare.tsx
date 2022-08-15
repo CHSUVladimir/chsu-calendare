@@ -4,7 +4,7 @@ import { ICHSUCalendareLocalisation, SatrtDay } from './loc';
 import { DefaultLocalisation } from './loc/DefaultLocalisation';
 import DayNamesRow from './Rows/DayNamesRow';
 import WeekRow from './Rows/WeekRow';
-import styles from './styles.module.scss'
+import * as styles from './styles.module.scss'
 
 
 export interface ICHSUCalendare {
